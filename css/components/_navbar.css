@@ -1,12 +1,19 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .navbar {
   background-color: black;
   z-index: 1000;
 
   /* Mobile Menu Icon Shape & Size  */
-  --mobile-menu-icon-size: calc(var(--navbar-height) * .7);
+  --mobile-menu-icon-size: calc(var(--navbar-height) * .8);
   --mobile-menu-icon-border-radius: 100vh;
   --mobile-menu-icon-line-height: 2px;
-  --mobile-menu-icon-line-width: 70%;
+  --mobile-menu-icon-line-width: 65%;
   --mobile-menu-icon-line-spacing: 10px;
   --mobile-menu-icon-line-border-radius: 0;
 
@@ -33,6 +40,12 @@
   --mobile-menu-background-color: white;
   --mobile-menu-link-color: black;
   --mobile-menu-link-color-hover: var(--primary);
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --navbar-height: 60px;
+  }
 }
 
 .navbar-nav {
@@ -143,6 +156,7 @@
   position: relative;
   background-color: var(--mobile-menu-icon-line-color);
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
+  border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
 .mobile-menu-icon-bar::before,
@@ -153,6 +167,7 @@
   height: 100%;
   background-color: var(--mobile-menu-icon-line-color);
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
+  border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
 .mobile-menu-icon-bar::before {

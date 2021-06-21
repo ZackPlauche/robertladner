@@ -1,4 +1,8 @@
 :root {
+  /* Colors */
+  --zackhub: #21abde;
+
+  /* Theme Colors */
   --primary: darkseagreen;
   --primary-dark: mediumseagreen;
   --secondary: rgb(77, 57, 20);
@@ -14,12 +18,12 @@
   /* Fonts */
   --base-font: 'Raleway', Arial;
   --display-font: 'Herr Von Muellerhoff', cursive;
-  --heading-font: var(--display-font);
+  --heading-font: 'Special Elite';
 
   /* Font Sizes */
   --base-font-size: 16px;
-  --display: 60px;
-  --h1: 40px;
+  --display: 80px;
+  --h1: 60px;
   --h2: 36px;
   --h3: 32px;
   --h4: 28px;
