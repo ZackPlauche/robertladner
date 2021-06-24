@@ -49,11 +49,8 @@ header {
 
 .navbar-nav {
   height: var(--navbar-height);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: space-between;
   justify-content: space-between;
-  -webkit-box-pack: center;
   align-items: center;
   position: relative;
 }
@@ -67,7 +64,6 @@ header {
   top: 5px;
   text-decoration: none;
   z-index: 1;
-  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -77,9 +73,7 @@ header {
 }
 
 .navbar-menu {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   align-items: center;
   gap: 15px;
   list-style: none;
@@ -141,20 +135,16 @@ header {
 
 .mobile-menu-icon {
   display: none;
-  -webkit-box-pack: center;
   align-items: center;
   background-color: var(--mobile-menu-icon-background-color);
   border-radius: var(--mobile-menu-icon-border-radius);
   height: var(--mobile-menu-icon-size);
-  -webkit-box-pack: center;
   justify-content: center;
   position: absolute;
   right: 0;
   width: var(--mobile-menu-icon-size);
   z-index: 1;
-  -webkit-transition: var(--mobile-menu-icon-transition-speed) ease;
   transition: var(--mobile-menu-icon-transition-speed) ease;
-  -webkit-box-shadow: var(--mobile-menu-icon-box-shadow);
   box-shadow: var(--mobile-menu-icon-box-shadow);
 }
 
@@ -163,7 +153,6 @@ header {
   width: var(--mobile-menu-icon-line-width);
   position: relative;
   background-color: var(--mobile-menu-icon-line-color);
-  -webkit-transition: var(--mobile-menu-icon-line-transition-speed) ease;
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
@@ -175,7 +164,6 @@ header {
   width: 100%;
   height: 100%;
   background-color: var(--mobile-menu-icon-line-color);
-  -webkit-transition: var(--mobile-menu-icon-line-transition-speed) ease;
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
@@ -192,7 +180,6 @@ header {
 
 .mobile-menu-toggle:hover  ~ .mobile-menu-icon {
   background-color: var(--mobile-menu-icon-background-color-hover);
-  -webkit-box-shadow: var(--mobile-menu-icon-box-shadow-hover);
   box-shadow: var(--mobile-menu-icon-box-shadow-hover);
 }
 
@@ -204,22 +191,18 @@ header {
 
 .mobile-menu-toggle:active  ~ .mobile-menu-icon {
   background-color: var(--mobile-menu-icon-background-color-active);
-  -webkit-box-shadow: var(--mobile-menu-icon-box-shadow-active);
   box-shadow: var(--mobile-menu-icon-box-shadow-active);
-  -webkit-transition: background-color 0s;
   transition: background-color 0s;
 }
 
 /* Mobile Menu Icon Checked */
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon {
-  display: -webkit-box;
   display: flex
 }
 .mobile-menu-toggle:checked {display: block}
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar {
-  -webkit-transform: rotate(var(--mobile-menu-icon-line-rotation));
   transform: rotate(var(--mobile-menu-icon-line-rotation));
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
@@ -227,7 +210,6 @@ header {
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
   top: 0;
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
@@ -237,9 +219,7 @@ header {
 
 .mobile-menu-toggle:checked  ~ .mobile-menu {
   flex-flow: column;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-pack: center;
   align-items: center;
   position: fixed;
   gap: 20px;
@@ -248,7 +228,6 @@ header {
   top: 0;
   left: -100%;
   background-color: var(--mobile-menu-background-color);
-  -webkit-transition: left .5s ease;
   transition: left .5s ease;
 }
 
@@ -268,9 +247,7 @@ header {
 @media only screen and (max-width: 1200px) {
   .mobile-menu {
     flex-flow: column;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-pack: center;
     align-items: center;
     position: fixed;
     gap: 20px;
@@ -279,14 +256,12 @@ header {
     top: 0;
     left: -100%;
     background-color: var(--mobile-menu-background-color);
-    -webkit-transition: left .5s ease;
     transition: left .5s ease;
   }
   
   
   .mobile-menu-toggle {display: block}
   .mobile-menu-icon {
-    display: -webkit-box;
     display: flex;
   }
 
