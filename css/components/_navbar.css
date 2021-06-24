@@ -20,7 +20,6 @@ header {
   /* Mobile Menu Icon Color */
   --mobile-menu-icon-line-color: white;
   --mobile-menu-icon-line-color-hover: var(--mobile-menu-icon-line-color);
-  --mobile-menu-icon-line-color-active: var(--mobile-menu-icon-line-color);
   --mobile-menu-icon-line-color-checked: black;
   --mobile-menu-icon-background-color: transparent;
   --mobile-menu-icon-background-color-hover: var(--mobile-menu-icon-background-color);
@@ -211,19 +210,12 @@ header {
   transition: background-color 0s;
 }
 
-.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar,
-.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
-.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
-  background-color: var(--mobile-menu-icon-line-color-active);
-  -webkit-transition: background-color 0s;
-  transition: background-color 0s;
-}
-
-
 /* Mobile Menu Icon Checked */
 
-.mobile-menu-toggle:checked  ~ .mobile-menu-icon {display: -webkit-box}
-.mobile-menu-toggle:checked  ~ .mobile-menu-icon {display: flex}
+.mobile-menu-toggle:checked  ~ .mobile-menu-icon {
+  display: -webkit-box;
+  display: flex
+}
 .mobile-menu-toggle:checked {display: block}
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar {
