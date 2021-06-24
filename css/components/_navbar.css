@@ -197,9 +197,7 @@ header {
 
 /* Mobile Menu Icon Checked */
 
-.mobile-menu-toggle:checked  ~ .mobile-menu-icon {
-  display: flex
-}
+.mobile-menu-toggle:checked  ~ .mobile-menu-icon {display: flex}
 .mobile-menu-toggle:checked {display: block}
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar {
@@ -278,5 +276,4 @@ header {
   .mobile-menu .icon {
     font-size: 32px;
   }
-
 }
