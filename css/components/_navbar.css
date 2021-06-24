@@ -198,8 +198,8 @@ header {
 }
 
 .mobile-menu-toggle:hover  ~ .mobile-menu-icon .mobile-menu-icon-bar,
-.mobile-menu-toggle:hover  ~ .mobile-menu-icon .mobile-menu-icon-bar:before,
-.mobile-menu-toggle:hover  ~ .mobile-menu-icon .mobile-menu-icon-bar:after {
+.mobile-menu-toggle:hover  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
+.mobile-menu-toggle:hover  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
   background-color: var(--mobile-menu-icon-line-color-hover);
 }
 
@@ -212,8 +212,8 @@ header {
 }
 
 .mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar,
-.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar:before,
-.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar:after {
+.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
+.mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
   background-color: var(--mobile-menu-icon-line-color-active);
   -webkit-transition: background-color 0s;
   transition: background-color 0s;
@@ -227,6 +227,7 @@ header {
 .mobile-menu-toggle:checked {display: block}
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar {
+  -webkit-transform: rotate(var(--mobile-menu-icon-line-rotation));
   transform: rotate(var(--mobile-menu-icon-line-rotation));
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
@@ -234,6 +235,7 @@ header {
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
   top: 0;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
