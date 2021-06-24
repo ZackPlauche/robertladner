@@ -65,6 +65,7 @@ header {
   top: 5px;
   text-decoration: none;
   z-index: 1;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -145,8 +146,8 @@ header {
   right: 0;
   width: var(--mobile-menu-icon-size);
   z-index: 1;
+  -webkit-transition: var(--mobile-menu-icon-transition-speed) ease;
   transition: var(--mobile-menu-icon-transition-speed) ease;
-  -webkit-transition: all var(--mobile-menu-icon-transition-speed) ease;
   box-shadow: var(--mobile-menu-icon-box-shadow);
 }
 
@@ -155,8 +156,8 @@ header {
   width: var(--mobile-menu-icon-line-width);
   position: relative;
   background-color: var(--mobile-menu-icon-line-color);
+  -webkit-transition: var(--mobile-menu-icon-line-transition-speed) ease;
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
-  -webkit-transition: all var(--mobile-menu-icon-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
@@ -167,8 +168,8 @@ header {
   width: 100%;
   height: 100%;
   background-color: var(--mobile-menu-icon-line-color);
+  -webkit-transition: var(--mobile-menu-icon-line-transition-speed) ease;
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
-  -webkit-transition: all var(--mobile-menu-icon-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
@@ -196,6 +197,7 @@ header {
 .mobile-menu-toggle:active  ~ .mobile-menu-icon {
   background-color: var(--mobile-menu-icon-background-color-active);
   box-shadow: var(--mobile-menu-icon-box-shadow-active);
+  -webkit-transition: background-color 0s;
   transition: background-color 0s;
 }
 
@@ -203,6 +205,7 @@ header {
 .mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar:before,
 .mobile-menu-toggle:active  ~ .mobile-menu-icon .mobile-menu-icon-bar:after {
   background-color: var(--mobile-menu-icon-line-color-active);
+  -webkit-transition: background-color 0s;
   transition: background-color 0s;
 }
 
@@ -213,6 +216,7 @@ header {
 .mobile-menu-toggle:checked {display: block}
 
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar {
+  -webkit-transform: rotate(var(--mobile-menu-icon-line-rotation));
   transform: rotate(var(--mobile-menu-icon-line-rotation));
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
@@ -220,6 +224,7 @@ header {
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::before,
 .mobile-menu-toggle:checked  ~ .mobile-menu-icon .mobile-menu-icon-bar::after {
   top: 0;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: var(--mobile-menu-icon-line-color-checked);
 }
@@ -238,6 +243,7 @@ header {
   top: 0;
   left: -100%;
   background-color: var(--mobile-menu-background-color);
+  -webkit-transition: left .5s ease;
   transition: left .5s ease;
 }
 
@@ -266,6 +272,7 @@ header {
     top: 0;
     left: -100%;
     background-color: var(--mobile-menu-background-color);
+    -webkit-transition: left .5s ease;
     transition: left .5s ease;
   }
   
