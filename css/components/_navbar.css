@@ -3,11 +3,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .navbar {
   background-color: black;
-  z-index: 1000;
 
   /* Mobile Menu Icon Shape & Size  */
   --mobile-menu-icon-size: calc(var(--navbar-height) * .8);
@@ -29,7 +29,7 @@ header {
   --mobile-menu-icon-box-shadow-hover: 0 0 5px var(--primary);
   --mobile-menu-icon-box-shadow-active: 0 0 10px var(--primary);
 
-  /* Mobile Menu Icon Animtations */
+  /* Mobile Menu Icon Animations */
   --mobile-menu-icon-line-transition-speed: .4s;
   --mobile-menu-icon-transition-speed: .2s;
   --mobile-menu-icon-line-rotation: 45deg;
@@ -71,7 +71,6 @@ header {
 .navbar-logo:focus,
 .navbar-logo:hover {
   color: var(--primary);
-  transition: color .2s ease;
 }
 
 .navbar-menu {
@@ -147,6 +146,7 @@ header {
   width: var(--mobile-menu-icon-size);
   z-index: 1;
   transition: var(--mobile-menu-icon-transition-speed) ease;
+  -webkit-transition: var(--mobile-menu-icon-transition-speed) ease;
   box-shadow: var(--mobile-menu-icon-box-shadow);
 }
 
@@ -156,6 +156,7 @@ header {
   position: relative;
   background-color: var(--mobile-menu-icon-line-color);
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
+  -webkit-transition: var(--mobile-menu-icon-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
@@ -167,6 +168,7 @@ header {
   height: 100%;
   background-color: var(--mobile-menu-icon-line-color);
   transition: var(--mobile-menu-icon-line-transition-speed) ease;
+  -webkit-transition: var(--mobile-menu-icon-transition-speed) ease;
   border-radius: var(--mobile-menu-icon-line-border-radius);
 }
 
